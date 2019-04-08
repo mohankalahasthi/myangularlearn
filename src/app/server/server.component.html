@@ -1,0 +1,10 @@
+<!-- --------------------interpolation by using id & string------------ -->
+<div class="d">
+  <h2>My name is {{ name }} {{ surname }}</h2>
+  <p>He is from {{getServerStatus()}}</p>
+</div>
+<!-- ---------------------property binding--------------------- -->
+<div class="d">
+  <button class="btn btn-primary" [disabled]="!activeButton">Add Button</button>
+  <p [innerText]="activeButton"></p>
+</div>
