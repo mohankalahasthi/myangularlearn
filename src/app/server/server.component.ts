@@ -12,6 +12,8 @@ export class ServerComponent implements OnInit {
 
   activeButton = false;
 
+  serverCreationStatus = 'No server created';
+
   getServerStatus() {
     return this.place;
   }
@@ -21,10 +23,14 @@ export class ServerComponent implements OnInit {
     setTimeout(() => {
       this.activeButton = true;
     }, 2000);
+     
 
   }
 
   ngOnInit() {
+  }
+  onCreateServer(){
+    this.serverCreationStatus = "Server was created";
   }
 
 }

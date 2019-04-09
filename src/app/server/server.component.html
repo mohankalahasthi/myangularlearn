@@ -5,6 +5,8 @@
 </div>
 <!-- ---------------------property binding--------------------- -->
 <div class="d">
-  <button class="btn btn-primary" [disabled]="!activeButton">Add Button</button>
-  <p [innerText]="activeButton"></p>
+  <button class="btn btn-primary" [disabled]="!activeButton" 
+  (click)="onCreateServer()">Add Button</button>
+  <!-- <p [innerText]="activeButton"></p> -->
+  <p>{{serverCreationStatus}}</p>
 </div>
