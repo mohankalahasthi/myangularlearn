@@ -6,13 +6,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { ServerComponent } from './server/server.component';
+import { BindingsComponent } from './bindings/bindings.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ServerComponent
+    ServerComponent,
+    BindingsComponent
   ],
   imports: [
     BrowserModule,
