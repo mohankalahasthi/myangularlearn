@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { ServerComponent } from './server/server.component';
 import { BindingsComponent } from './bindings/bindings.component';
+import { CockpitComponent } from './cockpit/cockpit.component';
+import { SpecialElementComponent } from './special-element/special-element.component';
 
 
 @NgModule({
@@ -14,7 +16,9 @@ import { BindingsComponent } from './bindings/bindings.component';
     AppComponent,
     HeaderComponent,
     ServerComponent,
-    BindingsComponent
+    BindingsComponent,
+    CockpitComponent,
+    SpecialElementComponent
   ],
   imports: [
     BrowserModule,
