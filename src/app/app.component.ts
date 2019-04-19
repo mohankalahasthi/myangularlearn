@@ -14,4 +14,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-angular-learn';
+  serverElements = [{type: 'server', name: 'TestServer', content: 'just a test!'}];
+  constructor(){}
+  
+  
+  
+  onServerElementAdded(event:any){
+        this.serverElements = event;
+  }
 }
+
+
