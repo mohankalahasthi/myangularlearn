@@ -9,7 +9,11 @@
     <hr>
     <div class="row">
         <div class="col-xs-12">
-            <app-server-element *ngFor="let serverElement of serverElements" [serverElementObj]="serverElement"></app-server-element>
+            <button class="btn btn-primary" (click)="onChangeFirst()">Change First Element</button>
+            <button class ="btn btn-danger" (click)="onDestroyFirst()">Destroy First Element</button>
+            <app-server-element *ngFor="let serverElement of serverElements" 
+            [serverElementObj]="serverElement"
+            [name]="serverElement.name"></app-server-element>
         </div>
     </div>
 </div>
