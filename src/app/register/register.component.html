@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-6 ">
+       <app-form (filledForm)="formAdd($event)" (clearForm)="clear($event)"></app-form>
+
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div *ngFor="let item of details">
+        <app-form-details [details]="item"> </app-form-details>
+  
+      </div>
+      </div>
+    </div>
+  </div>
+  

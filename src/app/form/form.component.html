@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-xs-12 col-md-8 col-md-offset-2">
+      <div class="form-group">
+        <h1>Fill details</h1>
+        <label>Name</label>
+        <input type="text" class="form-control" #name>
+        <label>place</label>
+        <input type="text" class="form-control" #place>
+        <label>phone</label>
+        <input type="text" class="form-control" #phone>
+        <label>address</label>
+        <input type="text" class="form-control" #address>
+
+      </div>
+  
+      <button class="btn btn-primary" (click)="createForm(name.value, place.value, phone.value, address.value)"> submit </button>
+      <button class="btn btn-danger"  (click)=clearData()> clear </button>
+      
+    </div>
+  </div>
+  

@@ -4,7 +4,7 @@
 <app-server></app-server>
 <app-bindings></app-bindings> -->
 
-<div class="container">
+<!-- <div class="container">
     <app-cockpit (serverElementAdded)="onServerElementAdded($event)"></app-cockpit>
     <hr>
     <div class="row">
@@ -16,4 +16,22 @@
             [name]="serverElement.name"></app-server-element>
         </div>
     </div>
-</div>
+</div> -->
+
+
+<div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <app-new-account (accountAdded)="onAccountAdded($event)"></app-new-account>
+            <hr>
+            <app-account
+              *ngFor="let acc of accounts; let i = index"
+              [account]="acc"
+              [id]="i"
+              (statusChanged)="onStatusChanged($event)"></app-account>
+          </div>
+        </div>
+      </div>
+
+      <app-register></app-register>
+      
