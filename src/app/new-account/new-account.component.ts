@@ -8,11 +8,11 @@ import { Component, Output, EventEmitter } from '@angular/core';
 export class NewAccountComponent {
   @Output() accountAdded = new EventEmitter<{name: string, status: string}>();
 
-  onCreateAccount(name: string, status: string) {
+  onCreateAccount(accountName: string, accountStatus: string) {
     this.accountAdded.emit({
-      name: name,
-      status: status
+      name: accountName,
+      status: accountStatus
     });
-    console.log('A server status changed, new status: ' + status);
+    
   }
 }
