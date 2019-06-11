@@ -14,6 +14,8 @@ import { NewAccountComponent } from './new-account/new-account.component';
 import { RegisterComponent } from './register/register.component';
 import { FormComponent } from './form/form.component';
 import { FormDetailsComponent } from './form-details/form-details.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 
 @NgModule({
@@ -28,7 +30,9 @@ import { FormDetailsComponent } from './form-details/form-details.component';
     NewAccountComponent,
     RegisterComponent,
     FormComponent,
-    FormDetailsComponent
+    FormDetailsComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
