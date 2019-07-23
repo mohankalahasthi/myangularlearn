@@ -16,6 +16,7 @@ import { FormComponent } from './form/form.component';
 import { FormDetailsComponent } from './form-details/form-details.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { TemplateDrivenComponent } from './template-driven/template-driven.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { ChildComponent } from './child/child.component';
     FormComponent,
     FormDetailsComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    TemplateDrivenComponent
   ],
   imports: [
     BrowserModule,
