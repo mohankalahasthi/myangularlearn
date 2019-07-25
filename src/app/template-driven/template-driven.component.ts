@@ -8,7 +8,9 @@ import { NgForm } from "@angular/forms";
 })
 export class TemplateDrivenComponent implements OnInit {
   @ViewChild("td") signupForm: NgForm;
-
+  defaultQuestion = "teacher";
+  answer = "";
+  genders = ["male", "female"];
   constructor() {}
 
   ngOnInit() {}

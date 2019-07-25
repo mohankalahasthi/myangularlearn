@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
       <form (ngSubmit)="onSubmit()" #td="ngForm">
-        <div id="user-data">
+        <div id="user-data" ngModelGroup="userData" #userData="ngModelGroup">
           <div class="form-group">
             <label for="username">Username</label>
             <input
@@ -14,10 +14,10 @@
               required
               #username="ngModel"
             />
-            <span
+            <!-- <span
               class="help-block"
-              *ngFor="!username.valid && username.touched"
-            ></span>
+              *ngIf="!username.valid && username.touched"
+            ></span> -->
           </div>
           <button class="btn btn-primary" type="button">
             Suggest an Username
@@ -39,13 +39,34 @@
             >
           </div>
         </div>
+        <p *ngIf="!userData.valid && userData.touched">User Data Is Invalid</p>
+        <div class="radio" *ngFor="let gender of genders">
+          <label>
+            <input type="radio" name="gender" ngModel [value]="gender" />
+            {{ gender }}
+          </label>
+        </div>
         <div class="form-group">
           <label for="secret">Secret Questions</label>
-          <select id="secret" class="form-control" ngModel name="secret">
+          <select
+            id="secret"
+            class="form-control"
+            [ngModel]="defaultQuestion"
+            name="secret"
+          >
             <option value="pet">Your first Pet?</option>
             <option value="teacher">Your first teacher?</option>
           </select>
         </div>
+        <div class="form-group">
+          <textarea
+            name="questionAnswer"
+            rows="3"
+            class="form-control"
+            [(ngModel)]="answer"
+          ></textarea>
+        </div>
+        <p>your reply: {{ answer }}</p>
         <button class="btn btn-primary" type="submit" [disabled]="!td.valid">
           Submit
         </button>
