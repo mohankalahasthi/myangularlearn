@@ -1,19 +1,61 @@
-.wholeContainer{
-    background-color: aqua;
-    height: 100vh;
+.wholeContainer {
+  background: radial-gradient(
+    circle,
+    rgba(114, 110, 172, 1) 0%,
+    rgba(17, 85, 152, 1) 35%,
+    rgba(17, 85, 152, 1) 100%
+  );
+  height: 100vh;
 }
-.registration-container{
-    margin: auto;
-    width: 500px;
+.registration-container {
+  margin: auto;
+  width: 500px;
 }
-.form-row{
-    padding: 10px 0px;
+.form-row {
+  padding: 10px 0px;
+  text-align: center;
 }
-.heading{
-    padding: 14px;
-    /* margin: auto; */
-    background-color: deepskyblue;
-    width: 100%;
-    color: white;
-    text-align: center;
+.heading {
+  padding: 14px;
+  /* margin: auto; */
+  background-color: deepskyblue;
+  width: 522px;
+  color: white;
+  text-align: center;
+  border-radius: 10px 10px 0px 0px;
+}
+.formfields {
+  background-color: white;
+  padding: 30px;
+  width: 522px;
+}
+h4 {
+  text-align: center;
+  padding: 29px;
+  color: white;
+  font-size: 31px;
+}
+.signbutton {
+  padding: 7px 0px 8px;
+  width: 156px;
+  font-size: 18px;
+}
+.btn {
+  text-align: center;
+}
+span {
+  padding: 8px;
+  color: deepskyblue;
+  cursor: pointer;
+}
+input {
+  padding: 29px 0px 28px 10px;
+  border-color: #716d6d;
+  border: 1px solid;
+}
+h6 {
+  color: #716d6d;
+}
+input.ng-invalid.ng-touched {
+  border: 1px solid red;
 }

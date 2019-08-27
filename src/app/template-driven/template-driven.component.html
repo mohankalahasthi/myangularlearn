@@ -14,10 +14,9 @@
               required
               #username="ngModel"
             />
-            <!-- <span
-              class="help-block"
-              *ngIf="!username.valid && username.touched"
-            ></span> -->
+            <span class="help-block" *ngIf="!username.valid && username.touched"
+              >please enter username
+            </span>
           </div>
           <button class="btn btn-primary" type="button">
             Suggest an Username
