@@ -1,4 +1,4 @@
-<div class="container">
+ <div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
       <form (ngSubmit)="onSubmit()" #td="ngForm">
@@ -19,7 +19,9 @@
               *ngIf="!username.valid && username.touched"
             ></span> -->
           </div>
-          <button class="btn btn-primary" type="button">
+          <button class="btn btn-primary" 
+          type="button"
+          (click)="suggestUaerName()">
             Suggest an Username
           </button>
           <div class="form-group">
