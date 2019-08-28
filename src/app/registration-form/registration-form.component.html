@@ -1,0 +1,105 @@
+<div class="wholeContainer ">
+  <div class="registration-container ">
+    <h4>Signer Register Form</h4>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="heading">
+            <h3>CREATE AN ACCOUNT</h3>
+          </div>         
+          <div class="formfields">
+            <form (ngSubmit)="onSubmit()" #registrationform="ngForm">
+              <div class="form-row row justify-content-between">
+                <div class="col-md-5">
+                  <input
+                    type="text"
+                    id="firstname"
+                    class="form-control"
+                    ngModel
+                    name="firstname"
+                    required
+                    placeholder="First name"
+                    #firstname="ngModel"
+                  />
+                  <span
+                    class="help-block"
+                    *ngIf="!firstname.valid && firstname.touched"
+                    >please enter firstname
+                  </span>
+                </div>
+                <div class="col-md-5">
+                  <input
+                    type="text"
+                    id="lastname"
+                    name="lastname"
+                    required
+                    class="form-control"
+                    ngModel
+                    placeholder="Last name"
+                    #lastname="ngModel"
+                  />
+                  <span
+                    class="help-block"
+                    *ngIf="!lastname.valid && lastname.touched"
+                    >please enter lastname
+                  </span>
+                </div>
+              </div>
+              <div class="form-row row ">
+                <div class="col-md-12">
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-control"
+                    name="email"
+                    ngModel
+                    placeholder="Email"
+                    #email="ngModel"
+                    required
+                  />
+                  <span class="help-block" *ngIf="!email.valid && email.touched"
+                    >Please enter valid email!</span
+                  >
+                </div>
+              </div>
+              <div class="form-row row justify-content-between">
+                <div class="col-md-5">
+                  <input type="password" class="form-control" />
+                </div>
+                <div class="col-md-5">
+                  <input type="password" class="form-control" />
+                </div>
+              </div>
+              <div class="form-row row">
+                <div class="col-md-12">
+                  <input
+                    type="number"
+                    id="phonenumber"
+                    class="form-control"
+                    name="phonenumber"
+                    placeholder="phone Number"
+                  />
+                  <span
+                    class="help-block"
+                    *ngIf="!phonenumber.valid && phonenumber.touched"
+                    >Please enter valid phone number!</span
+                  >
+                </div>
+              </div>
+              <div class="form-row row">
+                <div class="col-md-12 btn">
+                  <button type="submit" class="btn btn-danger signbutton" [disabled]="!registrationform.valid">
+                    Sign me up
+                  </button>
+                </div>
+                <div class="col-md-12">
+                  <p>Already have an account?<span style="padding: 8px; color: deepskyblue; cursor: pointer;">Login Here</span></p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

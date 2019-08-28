@@ -1,0 +1,58 @@
+.wholeContainer {
+  background: linear-gradient(90deg, rgba(47,80,101,1) 21%, rgba(79,147,190,1) 49%, rgba(47,80,101,1) 72%);
+
+  height: 100vh;
+}
+.registration-container {
+  margin: auto;
+  width: 500px;
+}
+.form-row {
+  padding: 10px 0px;
+  text-align: center;
+}
+.heading {
+  padding: 14px;
+  /* margin: auto; */
+  background-color: deepskyblue;
+  width: 522px;
+  color: white;
+  text-align: center;
+  border-radius: 10px 10px 0px 0px;
+}
+.formfields {
+  background-color: white;
+  padding: 30px;
+  width: 522px;
+  border-radius: 0px 0px 10px 10px;
+  border-top: 3px solid;
+  border-top-color: red;
+}
+h4 {
+  text-align: center;
+  padding: 29px;
+  color: white;
+  font-size: 31px;
+}
+.signbutton {
+  padding: 7px 0px 8px;
+  width: 156px;
+  font-size: 18px;
+}
+.btn {
+  text-align: center;
+}
+span {
+  color: red;
+}
+input {
+  padding: 29px 0px 28px 10px;
+  border-color: #716d6d;
+  border: 1px solid;
+}
+p {
+  color: #716d6d;
+}
+input.ng-invalid.ng-touched {
+  border: 1px solid red;
+}
