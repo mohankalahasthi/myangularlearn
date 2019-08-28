@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ViewChild } from '@angular/core';
+import { NgForm } from "@angular/forms";
 
 @Component({
   selector: 'app-registration-form',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./registration-form.component.scss']
 })
 export class RegistrationFormComponent implements OnInit {
-
+@ViewChild( "registrationform") signupForm: NgForm;
   constructor() { }
 
   ngOnInit() {

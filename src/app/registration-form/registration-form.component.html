@@ -1,15 +1,14 @@
 <div class="wholeContainer ">
   <div class="registration-container ">
     <h4>Signer Register Form</h4>
-
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="heading">
             <h3>CREATE AN ACCOUNT</h3>
-          </div>
+          </div>         
           <div class="formfields">
-            <form>
+            <form (ngSubmit)="onSubmit()" #registrationform="ngForm">
               <div class="form-row row justify-content-between">
                 <div class="col-md-5">
                   <input
@@ -41,7 +40,7 @@
                   />
                   <span
                     class="help-block"
-                    *ngIf="!firstname.valid && firstname.touched"
+                    *ngIf="!lastname.valid && lastname.touched"
                     >please enter lastname
                   </span>
                 </div>
@@ -89,12 +88,12 @@
               </div>
               <div class="form-row row">
                 <div class="col-md-12 btn">
-                  <button type="button" class="btn btn-danger signbutton">
+                  <button type="submit" class="btn btn-danger signbutton" [disabled]="!registrationform.valid">
                     Sign me up
                   </button>
                 </div>
                 <div class="col-md-12">
-                  <h6>Already have an account?<span>Login Here</span></h6>
+                  <p>Already have an account?<span style="padding: 8px; color: deepskyblue; cursor: pointer;">Login Here</span></p>
                 </div>
               </div>
             </form>

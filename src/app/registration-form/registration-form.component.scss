@@ -1,10 +1,6 @@
 .wholeContainer {
-  background: radial-gradient(
-    circle,
-    rgba(114, 110, 172, 1) 0%,
-    rgba(17, 85, 152, 1) 35%,
-    rgba(17, 85, 152, 1) 100%
-  );
+  background: linear-gradient(90deg, rgba(47,80,101,1) 21%, rgba(79,147,190,1) 49%, rgba(47,80,101,1) 72%);
+
   height: 100vh;
 }
 .registration-container {
@@ -28,6 +24,9 @@
   background-color: white;
   padding: 30px;
   width: 522px;
+  border-radius: 0px 0px 10px 10px;
+  border-top: 3px solid;
+  border-top-color: red;
 }
 h4 {
   text-align: center;
@@ -44,16 +43,14 @@ h4 {
   text-align: center;
 }
 span {
-  padding: 8px;
-  color: deepskyblue;
-  cursor: pointer;
+  color: red;
 }
 input {
   padding: 29px 0px 28px 10px;
   border-color: #716d6d;
   border: 1px solid;
 }
-h6 {
+p {
   color: #716d6d;
 }
 input.ng-invalid.ng-touched {
