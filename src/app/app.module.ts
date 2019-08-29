@@ -21,6 +21,7 @@ import { RegistrationFormComponent } from './registration-form/registration-form
 import { LifecylehooksComponent } from './lifecylehooks/lifecylehooks.component';
 import { LocalstorageComponent } from './localstorage/localstorage.component';
 import { JsonobjectComponent } from './jsonobject/jsonobject.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { JsonobjectComponent } from './jsonobject/jsonobject.component';
     RegistrationFormComponent,
     LifecylehooksComponent,
     LocalstorageComponent,
-    JsonobjectComponent
+    JsonobjectComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
