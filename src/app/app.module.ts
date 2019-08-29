@@ -18,6 +18,9 @@ import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { TemplateDrivenComponent } from './template-driven/template-driven.component';
 import { RegistrationFormComponent } from './registration-form/registration-form.component';
+import { LifecylehooksComponent } from './lifecylehooks/lifecylehooks.component';
+import { LocalstorageComponent } from './localstorage/localstorage.component';
+import { JsonobjectComponent } from './jsonobject/jsonobject.component';
 
 
 @NgModule({
@@ -36,7 +39,10 @@ import { RegistrationFormComponent } from './registration-form/registration-form
     ParentComponent,
     ChildComponent,
     TemplateDrivenComponent,
-    RegistrationFormComponent
+    RegistrationFormComponent,
+    LifecylehooksComponent,
+    LocalstorageComponent,
+    JsonobjectComponent
   ],
   imports: [
     BrowserModule,

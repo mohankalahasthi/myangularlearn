@@ -20,6 +20,7 @@
                     required
                     placeholder="First name"
                     #firstname="ngModel"
+                    [(ngModel)]="signUpDetails.firstname"
                   />
                   <span
                     class="help-block"
@@ -37,6 +38,7 @@
                     ngModel
                     placeholder="Last name"
                     #lastname="ngModel"
+                    [(ngModel)]="signUpDetails.lastName"
                   />
                   <span
                     class="help-block"
@@ -56,6 +58,7 @@
                     placeholder="Email"
                     #email="ngModel"
                     required
+                    [(ngModel)]="signUpDetails.email"
                   />
                   <span class="help-block" *ngIf="!email.valid && email.touched"
                     >Please enter valid email!</span
@@ -64,7 +67,7 @@
               </div>
               <div class="form-row row justify-content-between">
                 <div class="col-md-5">
-                  <input type="password" class="form-control" />
+                  <input type="password" [(ngModel)]="signUpDetails.password" class="form-control" [ngModelOptions]="{standalone: true}" />
                 </div>
                 <div class="col-md-5">
                   <input type="password" class="form-control" />
@@ -78,6 +81,9 @@
                     class="form-control"
                     name="phonenumber"
                     placeholder="phone Number"
+                    ngModel
+                    #phonenumber = ngModel
+                    [(ngModel)]="signUpDetails.phoneNumber"
                   />
                   <span
                     class="help-block"
