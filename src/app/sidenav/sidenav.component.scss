@@ -14,13 +14,16 @@
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 15px;
-  color: #818181;
+  // color: #818181;
+  color: green;
   display: block;
 }
-
-.sidenav a:hover {
-  color: #f1f1f1;
+.Active {
+  color: white !important;
 }
+// .sidenav a:hover {
+//   color: #f1f1f1;
+// }
 
 .main {
   margin-left: 160px; /* Same as the width of the sidenav */
