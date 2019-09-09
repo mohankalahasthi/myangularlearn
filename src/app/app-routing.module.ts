@@ -6,6 +6,7 @@ import { LifecylehooksComponent } from "./lifecylehooks/lifecylehooks.component"
 import { TemplateDrivenComponent } from "./template-driven/template-driven.component";
 import { RegisterComponent } from './register/register.component';
 import { BindingsComponent } from './bindings/bindings.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 
 const routes: Routes = [
   { path: "binding", component: BindingsComponent },
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: "localstorage", component: LocalstorageComponent },
   { path: "lifecyclehooks", component: LifecylehooksComponent },
   { path: "templatedriven", component: TemplateDrivenComponent },
-  { path: "register", component: RegisterComponent }
+  { path: "register", component: RegisterComponent },
+  {path: "reactiveform", component: ReactiveFormComponent}
 
 ];
 
