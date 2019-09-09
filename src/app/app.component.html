@@ -46,9 +46,15 @@
 </div> -->
 
 <!-- ----------------------------------Registration form ----------------------------------- -->
-<app-sidenav></app-sidenav>
-<!-- <app-registration-form></app-registration-form>
+<div class="container">
+  <div class="col-md 3">
+    <app-sidenav></app-sidenav>
+  </div>
+  <div class="col-md 9">
+    <router-outlet></router-outlet>
+  </div>
+</div>
 
+<!-- <app-registration-form></app-registration-form>
 <app-localstorage></app-localstorage>
 <app-jsonobject></app-jsonobject> -->
-<router-outlet></router-outlet>
