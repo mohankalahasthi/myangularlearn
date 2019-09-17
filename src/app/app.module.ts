@@ -23,6 +23,7 @@ import { LocalstorageComponent } from './localstorage/localstorage.component';
 import { JsonobjectComponent } from './jsonobject/jsonobject.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { PipesComponent } from './pipes/pipes.component';
 
 
 @NgModule({
@@ -46,13 +47,14 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
     LocalstorageComponent,
     JsonobjectComponent,
     SidenavComponent,
-    ReactiveFormComponent
+    ReactiveFormComponent,
+    PipesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule 
+    ReactiveFormsModule,    
   ],
   providers: [],
   bootstrap: [AppComponent]
