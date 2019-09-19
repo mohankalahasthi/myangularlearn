@@ -8,6 +8,7 @@ import { RegisterComponent } from "./register/register.component";
 import { BindingsComponent } from "./bindings/bindings.component";
 import { ReactiveFormComponent } from "./reactive-form/reactive-form.component";
 import { PipesComponent } from './pipes/pipes.component';
+import { LearnComponent} from './learn/learn.component';
 
 const routes: Routes = [
   { path: "binding", component: BindingsComponent },
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: "templatedriven", component: TemplateDrivenComponent },
   { path: "register", component: RegisterComponent },
   { path: "reactiveform", component: ReactiveFormComponent },
-  {path: "pipes", component: PipesComponent }
+  {path: "pipes", component: PipesComponent },
+  {path: "learni" , component: LearnComponent },
 ];
 
 @NgModule({
