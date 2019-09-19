@@ -1,19 +1,40 @@
-.card-screen{
-    background-color: coral;
-    width: 241px;
-    height: 142px;
-    margin:auto;
-    border-bottom-right-radius: unset;
-    border-bottom-left-radius: unset;
+.card-screen {
+  background-color: coral;
+  width: 241px;
+  height: 135px;
+  margin: auto;
+  border-bottom-right-radius: unset;
+  border-bottom-left-radius: unset;
 }
-.card-keyboard{
-    height: 125px;
-    margin: auto;
-    border-bottom: 126px solid #cebbbb;
-    border-left: 31px solid transparent;
-    border-right: 29px solid transparent;
-    width: 300px;
-    border-top: none;
-    border-top-left-radius: unset;
-    border-top-right-radius: unset; 
+.card-keyboard {
+  height: 125px;
+  width: 300px;
+  margin: auto;
+  border-bottom: 138px solid #cebbbb;
+  border-left: 31px solid transparent;
+  border-right: 29px solid transparent;
+  border-top: none;
+  border-top-left-radius: unset;
+  border-top-right-radius: unset;
+  //   box-shadow: 0 10px 4px 0 rgba(0, 0, 0, 0.5);
+  //   perspective: 500px;
+  //   background: blue;
+  //   transform: rotateX(50deg);
+}
+.card-keyboard-amt a {
+  padding: 6px 6px 0px 0px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.card-keyboard-details h6 {
+  font-weight: bold;
+  font-size: 15px;
+}
+.card-keyboard-details p {
+  font-size: 11px;
+  padding-right: 12px;
+}
+.card-keyboard-icons span {
+  font-size: 10px;
+  padding-left: 9px;
 }
