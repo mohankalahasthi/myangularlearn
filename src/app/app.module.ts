@@ -1,7 +1,6 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
-
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { HeaderComponent } from "./header/header.component";
@@ -27,6 +26,8 @@ import { PipesComponent } from "./pipes/pipes.component";
 import { ShortenPipe } from "./shorten.pipe";
 import { FilterPipe } from './filter.pipe';
 import { LearnComponent } from './learn/learn.component';
+import { ArrayoperationsComponent } from './arrayoperations/arrayoperations.component';
+import { JstimersComponent } from './jstimers/jstimers.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,9 @@ import { LearnComponent } from './learn/learn.component';
     PipesComponent,
     ShortenPipe,
     FilterPipe,
-    LearnComponent
+    LearnComponent,
+    ArrayoperationsComponent,
+    JstimersComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [],

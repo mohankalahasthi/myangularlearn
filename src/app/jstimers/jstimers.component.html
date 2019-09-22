@@ -1,0 +1,16 @@
+<h1>setTimeout and setInterval</h1>
+<input
+  class="btn btn-danger"
+  type="button"
+  name="sayHello"
+  value="Wait for my Hello!"
+  onclick="setTimeout('alert(\'Hello!\')', 2000)"
+/>
+
+<div>
+  <button class="btn btn-primary" (click)="sayHello()">SetTimeout</button>
+</div>
+
+<div>
+    <button class="btn btn-primary" (click)="sayHi()">SetInterval</button>
+  </div>

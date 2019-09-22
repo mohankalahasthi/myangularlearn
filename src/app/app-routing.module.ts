@@ -9,6 +9,8 @@ import { BindingsComponent } from "./bindings/bindings.component";
 import { ReactiveFormComponent } from "./reactive-form/reactive-form.component";
 import { PipesComponent } from './pipes/pipes.component';
 import { LearnComponent} from './learn/learn.component';
+import { ArrayoperationsComponent } from './arrayoperations/arrayoperations.component';
+import { JstimersComponent } from './jstimers/jstimers.component';
 
 const routes: Routes = [
   { path: "binding", component: BindingsComponent },
@@ -20,6 +22,10 @@ const routes: Routes = [
   { path: "reactiveform", component: ReactiveFormComponent },
   {path: "pipes", component: PipesComponent },
   {path: "learni" , component: LearnComponent },
+  {path: "arrayoper" , component: ArrayoperationsComponent },
+  {path: "timeoutFunctions" , component: JstimersComponent },
+ 
+  
 ];
 
 @NgModule({

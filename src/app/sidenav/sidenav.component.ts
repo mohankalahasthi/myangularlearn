@@ -14,5 +14,5 @@ export class SidenavComponent implements OnInit {
   }
   loadbinding(){
     this.router.navigate(['/binding']);
-}
+  }
 }
