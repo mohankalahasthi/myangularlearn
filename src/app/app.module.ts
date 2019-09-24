@@ -28,6 +28,8 @@ import { FilterPipe } from './filter.pipe';
 import { LearnComponent } from './learn/learn.component';
 import { ArrayoperationsComponent } from './arrayoperations/arrayoperations.component';
 import { JstimersComponent } from './jstimers/jstimers.component';
+import { MaterialModule } from './material.module';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -58,7 +60,13 @@ import { JstimersComponent } from './jstimers/jstimers.component';
     ArrayoperationsComponent,
     JstimersComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
+  imports: [ BrowserModule, 
+            AppRoutingModule, 
+            FormsModule, 
+            ReactiveFormsModule,
+            MaterialModule,
+            BrowserAnimationsModule
+        ],
   providers: [],
   bootstrap: [AppComponent]
 })
