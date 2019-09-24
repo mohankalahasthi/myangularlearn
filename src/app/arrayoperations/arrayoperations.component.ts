@@ -6,7 +6,7 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./arrayoperations.component.scss"]
 })
 export class ArrayoperationsComponent implements OnInit {
-  a:any= [1,2,3,4];
+  a: any = [1, 2, 3, 4];
   arr: any = [1, 2, 3, 4, [5], [6]];
   arrred1 = [2, 5, 1, 9, 6];
   arrmap = [1000, 4000, 9000, 16000]; //map
@@ -33,7 +33,8 @@ export class ArrayoperationsComponent implements OnInit {
   arrayobj2 = [{ age: 18, name: "peter" }, { age: 23, name: "pant" }];
   constructor() {
     // this.mapdemo();
-    }
+    this.fordemo();
+  }
 
   ngOnInit() {}
 
@@ -120,11 +121,17 @@ export class ArrayoperationsComponent implements OnInit {
   }
   reduceArr3() {
     let newarr = this.arrayobj2.reduce((obj1, obj2) => {
-        console.log(obj1);
-        console.log(obj2);
-        return obj1 + obj2.age; 
-    }, 0)
+      console.log(obj1);
+      console.log(obj2);
+      return obj1 + obj2.age;
+    }, 0);
     // If initialValue isn't provided, reduce() will execute the callback function starting at index 1, skipping the first index. If initialValue is provided, it will start at index 0.
-      console.log(newarr);
-  } 
+    console.log(newarr);
+  }
+  fordemo() {
+    let a: any;
+    for (a = 0; a < 4; a++) {
+      console.log("Block statement execution no." + a);
+    }
+  }
 }
