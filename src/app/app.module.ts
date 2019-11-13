@@ -30,6 +30,9 @@ import { ArrayoperationsComponent } from './arrayoperations/arrayoperations.comp
 import { JstimersComponent } from './jstimers/jstimers.component';
 import { MaterialModule } from './material.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { VirtualkeyboardComponent } from './virtualkeyboard/virtualkeyboard.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatKeyboardModule } from '@ngx-material-keyboard/core';
 
 @NgModule({
   declarations: [
@@ -58,14 +61,17 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     FilterPipe,
     LearnComponent,
     ArrayoperationsComponent,
-    JstimersComponent
+    JstimersComponent,
+    VirtualkeyboardComponent
   ],
   imports: [ BrowserModule, 
             AppRoutingModule, 
             FormsModule, 
             ReactiveFormsModule,
             MaterialModule,
-            BrowserAnimationsModule
+            BrowserAnimationsModule,
+            MatButtonModule,
+            MatKeyboardModule,
         ],
   providers: [],
   bootstrap: [AppComponent]

@@ -11,6 +11,7 @@ import { PipesComponent } from './pipes/pipes.component';
 import { LearnComponent} from './learn/learn.component';
 import { ArrayoperationsComponent } from './arrayoperations/arrayoperations.component';
 import { JstimersComponent } from './jstimers/jstimers.component';
+import { VirtualkeyboardComponent } from './virtualkeyboard/virtualkeyboard.component';
 
 const routes: Routes = [
   { path: "binding", component: BindingsComponent },
@@ -24,6 +25,8 @@ const routes: Routes = [
   {path: "learni" , component: LearnComponent },
   {path: "arrayoper" , component: ArrayoperationsComponent },
   {path: "timeoutFunctions" , component: JstimersComponent },
+  {path: "virtualkeyboard" , component: VirtualkeyboardComponent },
+
  
   
 ];
