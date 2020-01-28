@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import {MessageService} from './services/message.service';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -15,7 +17,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
 //   serverElements = [{type: 'server', name: 'TestServer', content: 'just a test!'}];
-  // constructor(){}
+ 
     
 //   onServerElementAdded(event:any){
 //         this.serverElements = event;
@@ -30,6 +32,7 @@ export class AppComponent {
 // } 
 
 // ----------------------------------acccount & new account ------------------------------------
+
 accounts = [
   {
     name: 'Master Account',
@@ -44,6 +47,15 @@ accounts = [
     status: 'unknown'
   }
 ];
+
+message : any;
+constructor(private messageService : MessageService){
+  this.messageService.getMessage().subscribe((data) => {
+    this.message = data ? data.text : '';
+    console.log(this.message)
+  })
+}
+
 
 onAccountAdded(newAccount: {name: string, status: string}) {
   this.accounts.push(newAccount);

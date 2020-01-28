@@ -33,6 +33,11 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { VirtualkeyboardComponent } from './virtualkeyboard/virtualkeyboard.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatKeyboardModule } from '@ngx-material-keyboard/core';
+import { WhitelableFormComponent } from './whitelable-form/whitelable-form.component';
+import { DataSharingComponent } from './data-sharing/data-sharing.component';
+
+import {MessageService} from './services/message.service';
+import { NgTemplateComponent } from './ng-template/ng-template.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +67,10 @@ import { MatKeyboardModule } from '@ngx-material-keyboard/core';
     LearnComponent,
     ArrayoperationsComponent,
     JstimersComponent,
-    VirtualkeyboardComponent
+    VirtualkeyboardComponent,
+    WhitelableFormComponent,
+    DataSharingComponent,
+    NgTemplateComponent
   ],
   imports: [ BrowserModule, 
             AppRoutingModule, 
@@ -73,7 +81,7 @@ import { MatKeyboardModule } from '@ngx-material-keyboard/core';
             MatButtonModule,
             MatKeyboardModule,
         ],
-  providers: [],
+  providers: [MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

@@ -12,6 +12,9 @@ import { LearnComponent} from './learn/learn.component';
 import { ArrayoperationsComponent } from './arrayoperations/arrayoperations.component';
 import { JstimersComponent } from './jstimers/jstimers.component';
 import { VirtualkeyboardComponent } from './virtualkeyboard/virtualkeyboard.component';
+import { DataSharingComponent } from './data-sharing/data-sharing.component';
+import { NgTemplateComponent } from './ng-template/ng-template.component';
+
 
 const routes: Routes = [
   { path: "binding", component: BindingsComponent },
@@ -26,6 +29,8 @@ const routes: Routes = [
   {path: "arrayoper" , component: ArrayoperationsComponent },
   {path: "timeoutFunctions" , component: JstimersComponent },
   {path: "virtualkeyboard" , component: VirtualkeyboardComponent },
+  {path: "dataSharing" , component: DataSharingComponent },
+  {path: "ngTemplate" , component: NgTemplateComponent },
 
  
   

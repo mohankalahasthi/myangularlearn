@@ -1,0 +1,9 @@
+<ng-container *ngFor="let item of dummyArray">
+    <ng-container *ngIf="item.name == 'SuperAdmin'">
+      <h4>{{item.name}}</h4>
+      <p>{{item.age}}</p>
+    </ng-container>
+</ng-container>
+
+<ng-content select= "h1">asdasdas</ng-content>
+

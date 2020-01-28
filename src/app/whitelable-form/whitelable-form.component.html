@@ -1,0 +1,252 @@
+<ng-template [ngIf]="type == customerinfo">
+    <div>
+        <h6>Customer Personal Information</h6>
+      </div>
+      
+      <div fxLayout="row wrap" fxLayoutAlign="space-between center" >
+        <div fxFlex="100">
+            <mat-form-field appearance="outline" style="padding: 0px 20px"
+            >
+                <mat-label>Surname</mat-label>
+                <input [matKeyboard] matInput placeholder="Surname">
+                <mat-hint>Hint</mat-hint>
+              </mat-form-field>
+              <mat-form-field appearance="outline" style="padding: 0px 20px"
+              >
+                  <mat-label>Middle Name</mat-label>
+                  <input [matKeyboard] matInput placeholder="Middle Name">
+                  <mat-hint>Hint</mat-hint>
+                </mat-form-field>
+                <mat-form-field appearance="outline" style="padding: 0px 20px">
+                    <mat-label>Last Name</mat-label>
+                    <input [matKeyboard] matInput placeholder="Last Name">
+                    <mat-hint>Hint</mat-hint>
+                  </mat-form-field>
+        </div>
+        <div fxFlex="100">
+            <mat-form-field appearance="outline" style="padding: 0px 20px"
+            >
+                <mat-label>Mobile Number</mat-label>
+                <input [matKeyboard] matInput placeholder="Surname">
+                <mat-hint>Hint</mat-hint>
+              </mat-form-field>
+                <mat-form-field appearance="outline" color="accent" >
+                    <mat-label>Date of Birth</mat-label>
+                    <input matInput [matDatepicker]="picker1">
+                    <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                    <mat-datepicker #picker1></mat-datepicker>
+      
+                  </mat-form-field>
+                <mat-form-field appearance="outline" style="padding: 0px 20px">
+                    <mat-label>Id Number</mat-label>
+                    <input [matKeyboard] matInput placeholder="Last Name">
+                    <mat-hint>Hint</mat-hint>
+                  </mat-form-field>
+        </div>
+      </div>
+</ng-template>
+<ng-template [ngIf]="type == Nationaladdress">
+    <div>
+        <h6>National Address</h6>
+      </div>
+      
+      <div fxLayout="row wrap"fxLayoutAlign="space-between center" >
+        <div fxFlex="100">
+            <mat-form-field appearance="outline" style="padding: 0px 20px"
+            >
+                <mat-label>District</mat-label>
+                <input [matKeyboard] matInput placeholder="District">
+                <mat-hint>Hint</mat-hint>
+              </mat-form-field>
+              <mat-form-field appearance="outline" style="padding: 0px 20px"
+              >
+                  <mat-label>Street</mat-label>
+                  <input [matKeyboard] matInput placeholder="Street">
+                  <mat-hint>Hint</mat-hint>
+                </mat-form-field>
+                <mat-form-field appearance="outline" style="padding: 0px 20px">
+                    <mat-label>City</mat-label>
+                    <input [matKeyboard] matInput placeholder="City">
+                    <mat-hint>Hint</mat-hint>
+                  </mat-form-field>
+        </div>
+        <div fxFlex="100">
+            <mat-form-field appearance="outline" style="padding: 0px 20px"
+            >
+                <mat-label>Postal Code</mat-label>
+                <input [matKeyboard] matInput placeholder="Postal Code">
+                <mat-hint>Hint</mat-hint>
+              </mat-form-field>
+        </div>
+      </div>
+</ng-template>
+<ng-template [ngIf]="type == WorkInfo">
+    <div>
+        <h6>Work Information</h6>
+      </div>
+      
+      <div fxLayout="row wrap"fxLayoutAlign="space-between center" >
+        <div fxFlex="100">
+              <mat-form-field appearance="outline">
+                <mat-label>Service Duration</mat-label>
+                <select matNativeControl required>
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="mercedes">Mercedes</option>
+                  <option value="audi">Audi</option>
+                </select>
+              </mat-form-field>
+              <mat-form-field appearance="outline" style="padding: 0px 20px"
+              >
+                  <mat-label>Net Monthly Salary</mat-label>
+                  <input [matKeyboard] matInput placeholder="Middle Name">
+                  <mat-hint>Hint</mat-hint>
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                  <mat-label>Sector</mat-label>
+                  <select matNativeControl required>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                </mat-form-field>
+        </div>
+        <div fxFlex="100">
+            <mat-form-field appearance="outline" style="padding: 0px 20px"
+            >
+                <mat-label>Job Title</mat-label>
+                <input [matKeyboard] matInput placeholder="Surname">
+                <mat-hint>Hint</mat-hint>
+              </mat-form-field>
+              <mat-form-field appearance="outline" style="padding: 0px 20px"
+              >
+                  <mat-label>Company Name</mat-label>
+                  <input [matKeyboard] matInput placeholder="Surname">
+                  <mat-hint>Hint</mat-hint>
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                  <mat-label>Salary Transfered To</mat-label>
+                  <select matNativeControl required>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                </mat-form-field>
+        </div>
+      </div>
+</ng-template>
+<ng-template [ngIf]="type == CarInfo">
+  <div>
+      <h6>Car Information</h6>
+    </div>
+    
+    <div fxLayout="row wrap"fxLayoutAlign="space-between center" >
+      <div fxFlex="100">
+          <mat-form-field appearance="outline">
+          <mat-label>Car Price</mat-label>
+          <input [matKeyboard] matInput placeholder="Middle Name">
+          <mat-hint>Hint</mat-hint>
+        </mat-form-field>
+            <mat-form-field appearance="outline">
+              <mat-label>Car Type</mat-label>
+              <select matNativeControl required>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </select>
+            </mat-form-field>
+            <mat-form-field appearance="outline" style="padding: 0px 20px"
+            > 
+                <mat-label>Car Brand</mat-label>
+                <select matNativeControl required>
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="mercedes">Mercedes</option>
+                  <option value="audi">Audi</option>
+                </select>
+              </mat-form-field>
+      </div>
+      <div fxFlex="100">
+            <mat-form-field appearance="outline">
+                <mat-label>Branch</mat-label>
+                <select matNativeControl required>
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="mercedes">Mercedes</option>
+                  <option value="audi">Audi</option>
+                </select>
+              </mat-form-field>
+              <mat-form-field appearance="outline">
+                <mat-label>Suppliers</mat-label>
+                <select matNativeControl required>
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="mercedes">Mercedes</option>
+                  <option value="audi">Audi</option>
+                </select>
+              </mat-form-field>
+      </div>
+    </div>
+</ng-template>
+<ng-template [ngIf]="type == CarInfo">
+    <div>
+        <h6>Financing Information</h6>
+      </div>
+      
+      <div fxLayout="row wrap"fxLayoutAlign="space-between center" >
+        <div fxFlex="100">
+              <mat-form-field appearance="outline">
+                <mat-label>Car Type</mat-label>
+                <select matNativeControl required>
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="mercedes">Mercedes</option>
+                  <option value="audi">Audi</option>
+                </select>
+              </mat-form-field>
+              <mat-form-field appearance="outline" style="padding: 0px 20px"
+              > 
+                  <mat-label>Car Brand</mat-label>
+                  <select matNativeControl required>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                </mat-form-field>
+                <mat-form-field appearance="outline" style="padding: 0px 20px"
+              > 
+                  <mat-label>Car Brand</mat-label>
+                  <select matNativeControl required>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                </mat-form-field>
+        </div>
+        <div fxFlex="100">
+              <mat-form-field appearance="outline">
+                  <mat-label>Branch</mat-label>
+                  <select matNativeControl required>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                  <mat-label>Suppliers</mat-label>
+                  <select matNativeControl required>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                </mat-form-field>
+        </div>
+      </div>
+  </ng-template>
