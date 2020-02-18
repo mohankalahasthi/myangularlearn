@@ -38,6 +38,11 @@ import { DataSharingComponent } from './data-sharing/data-sharing.component';
 
 import {MessageService} from './services/message.service';
 import { NgTemplateComponent } from './ng-template/ng-template.component';
+import { DemoServiceComponent } from './demo-service/demo-service.component';
+
+
+import {HttpClientModule} from '@angular/common/http';
+import { DemoService } from './services/demo.service';
 
 @NgModule({
   declarations: [
@@ -70,7 +75,8 @@ import { NgTemplateComponent } from './ng-template/ng-template.component';
     VirtualkeyboardComponent,
     WhitelableFormComponent,
     DataSharingComponent,
-    NgTemplateComponent
+    NgTemplateComponent,
+    DemoServiceComponent
   ],
   imports: [ BrowserModule, 
             AppRoutingModule, 
@@ -80,8 +86,9 @@ import { NgTemplateComponent } from './ng-template/ng-template.component';
             BrowserAnimationsModule,
             MatButtonModule,
             MatKeyboardModule,
+            HttpClientModule
         ],
-  providers: [MessageService],
+  providers: [MessageService,DemoService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

@@ -14,6 +14,7 @@ import { JstimersComponent } from './jstimers/jstimers.component';
 import { VirtualkeyboardComponent } from './virtualkeyboard/virtualkeyboard.component';
 import { DataSharingComponent } from './data-sharing/data-sharing.component';
 import { NgTemplateComponent } from './ng-template/ng-template.component';
+import { DemoServiceComponent } from './demo-service/demo-service.component';
 
 
 const routes: Routes = [
@@ -31,6 +32,9 @@ const routes: Routes = [
   {path: "virtualkeyboard" , component: VirtualkeyboardComponent },
   {path: "dataSharing" , component: DataSharingComponent },
   {path: "ngTemplate" , component: NgTemplateComponent },
+  {path: "demoService" , component: DemoServiceComponent },
+
+
 
  
   
