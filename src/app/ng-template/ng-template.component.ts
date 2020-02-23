@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import {MessageService} from './../services/message.service'
+
 @Component({
   selector: "app-ng-template",
   templateUrl: "./ng-template.component.html",
@@ -23,29 +23,7 @@ export class NgTemplateComponent implements OnInit {
       rights: [ "contributor"]
     }
   ];
-  message:any
+  constructor() {}
 
-  constructor(private messageService: MessageService) {}
-
-  ngOnInit() {
-    this.message = this.messageService.getMessage();
-    console.log(this.message)
-    this.a();
-  }
-
-  
-  a(){
-    let tempArray:any = [];
-    this.dummyArray.forEach(ele => {
-      if(ele.name === 'user'){
-        tempArray.push(ele);
-      }
-    })
-
-    console.log(tempArray);
-  }
-
-
-
-
+  ngOnInit() {}
 }

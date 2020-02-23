@@ -1,0 +1,31 @@
+<h3>Cart component</h3>
+<div class="container bg">
+  <div class="row" style="background-color: rgb(83, 150, 196)">
+    <div class="col-md-2">
+      <p>Name</p>
+    </div>
+    <div class="col-md-3">
+     image
+    </div>
+    <div class="col-md-4">
+     Description
+    </div>
+    <div class="col-md-3">
+     Action
+    </div>
+  </div>
+  <div class="row" style="background-color: rgb(177, 218, 149); margin-top: 5px;" *ngFor = "let item of selectProduct">
+    <div class="col-md-2">
+      <p>{{item.name}}</p>
+    </div>
+    <div class="col-md-3">
+      <img src="{{item.image}}" alt="" style="height:30px;width: 30px;">
+    </div>
+    <div class="col-md-4">
+      <p>{{item.desc}}</p>
+    </div>
+    <div class="col-md-3">
+      <button (click) = "remove(item)">Remove</button>
+    </div>
+  </div>
+</div>

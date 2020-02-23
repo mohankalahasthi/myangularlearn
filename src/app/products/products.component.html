@@ -1,0 +1,32 @@
+
+<h3>Product component</h3>
+<div class="container bg">
+  <div class="row" style="background-color:rgb(83, 150, 196)">
+    <div class="col-md-3">
+      <p>Name</p>
+    </div>
+    <div class="col-md-2">
+     image
+    </div>
+    <div class="col-md-5">
+     Description
+    </div>
+    <div class="col-md-2">
+     Action
+    </div>
+  </div>
+  <div class="row" style="background-color: rgb(164, 127, 199); margin-top: 5px;" *ngFor = "let item of products">
+    <div class="col-md-3">
+      <p>{{item.name}}</p>
+    </div>
+    <div class="col-md-2">
+      <img src="{{item.image}}" alt="" style="height:30px;width: 30px;">
+    </div>
+    <div class="col-md-5">
+      <p>{{item.desc}}</p>
+    </div>
+    <div class="col-md-2">
+      <button (click)="addcard(item)">Add Cart</button>
+    </div>
+  </div>
+</div>

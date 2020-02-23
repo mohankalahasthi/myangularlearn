@@ -38,11 +38,10 @@ import { DataSharingComponent } from './data-sharing/data-sharing.component';
 
 import {MessageService} from './services/message.service';
 import { NgTemplateComponent } from './ng-template/ng-template.component';
-import { DemoServiceComponent } from './demo-service/demo-service.component';
-
-
-import {HttpClientModule} from '@angular/common/http';
-import { DemoService } from './services/demo.service';
+import { ProductsComponent } from './products/products.component';
+import { CartComponent } from './cart/cart.component';
+import { EcommerceComponent } from './ecommerce/ecommerce.component';
+import { EcommerceService } from './services/ecommerce.service';
 
 @NgModule({
   declarations: [
@@ -76,7 +75,9 @@ import { DemoService } from './services/demo.service';
     WhitelableFormComponent,
     DataSharingComponent,
     NgTemplateComponent,
-    DemoServiceComponent
+    ProductsComponent,
+    CartComponent,
+    EcommerceComponent
   ],
   imports: [ BrowserModule, 
             AppRoutingModule, 
@@ -86,9 +87,8 @@ import { DemoService } from './services/demo.service';
             BrowserAnimationsModule,
             MatButtonModule,
             MatKeyboardModule,
-            HttpClientModule
         ],
-  providers: [MessageService,DemoService],
+  providers: [MessageService,EcommerceService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
