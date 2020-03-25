@@ -15,6 +15,8 @@ import { VirtualkeyboardComponent } from './virtualkeyboard/virtualkeyboard.comp
 import { DataSharingComponent } from './data-sharing/data-sharing.component';
 import { NgTemplateComponent } from './ng-template/ng-template.component';
 import { EcommerceComponent } from './ecommerce/ecommerce.component';
+import { DemoServiceComponent } from './demo-service/demo-service.component';
+import { PageNationComponent } from './page-nation/page-nation.component';
 
 
 const routes: Routes = [
@@ -33,10 +35,10 @@ const routes: Routes = [
   {path: "dataSharing" , component: DataSharingComponent },
   {path: "ngTemplate" , component: NgTemplateComponent },
   {path: "ecommerce" , component: EcommerceComponent },
+  {path: "api-service" , component: DemoServiceComponent },
+  {path: "page-nation" , component: PageNationComponent },
 
 
- 
-  
 ];
 
 @NgModule({

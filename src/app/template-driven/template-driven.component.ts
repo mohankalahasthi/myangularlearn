@@ -22,7 +22,7 @@ export class TemplateDrivenComponent implements OnInit {
     //   secret: 'pet',
     //   questionAnswer: '',
     //   gender: 'male'
-    // });
+    // });   
     
   }
   constructor() { }

@@ -8,7 +8,7 @@ import { EcommerceService } from '../services/ecommerce.service';
 })
 export class CartComponent implements OnInit {
   selectProduct:any = [];
-  removeProduct:any = [];
+  // removeProduct:any = [];
   constructor(private ecommerceService:EcommerceService) {
   this.ecommerceService.getproduct().subscribe(data =>{
     console.log(data)

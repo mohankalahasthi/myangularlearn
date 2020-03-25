@@ -11,7 +11,6 @@ export class EcommerceService {
         // console.log(item);
        this.subject.next(item)
     }
-
     getproduct(): Observable<any>{
         return this.subject.asObservable();
     }
